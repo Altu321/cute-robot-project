@@ -1,0 +1,67 @@
+.ScreenTwo {
+    width: 100wh;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 5% 20% 55% 20%;
+  }
+  .ScreenTwo-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .ScreenTwo-list {
+    width: 100%;
+    height: 100%;
+    margin-top: 5%;
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: 100%;
+    column-gap: 5px;
+  }
+  
+  .isActivelefteye {
+    border: 5px solid green;
+  }
+  .notActivelefteye {
+    border: 5px solid white;
+  }
+  
+  .ScreenTwo-btn {
+    height: 60px;
+    width: 120px;
+    position: absolute;
+    top: 23%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    border: none;
+    border-radius: 35px;
+    color: white;
+    background-color: green;
+    text-align: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .lefteeye {
+    text-align: center;
+  }
+  .righteye {
+    text-align: center;
+  }
+  .nose {
+    text-align: center;
+  }
+  .smile{
+    text-align: center;
+  }
+  
+  .ScreenTwo-img {
+    position: absolute;
+    top: 66%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
