@@ -1,0 +1,24 @@
+.ScreenThree-main {
+    width: 100wh;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 100%;
+  }
+  .ScreenThree-btn {
+    height: 60px;
+    width: 120px;
+    margin-left: 80%;
+    border: none;
+    border-radius: 35px;
+    color: white;
+    background-color: green;
+    text-align: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+  }
+  

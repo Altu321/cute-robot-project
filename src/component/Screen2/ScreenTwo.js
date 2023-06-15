@@ -1,4 +1,4 @@
-import react,{useState} from "react";
+import react, { useState } from "react";
 import "./ScreenTwo.css";
 import robotface from "../../image/robotface.jpeg";
 import lefteye from "../../image/lefteye.jpeg";
@@ -13,7 +13,6 @@ function ScreenTwo() {
   const [isrighteye, setrighteye] = useState(false);
   const [isnose, setnose] = useState(false);
   const [issmile, setsmile] = useState(false);
-  
 
   const handleSwitch = (comp) => {
     console.log(comp);
@@ -69,8 +68,6 @@ function ScreenTwo() {
         }
         break;
       }
-
-      
     }
   };
 
@@ -111,7 +108,7 @@ function ScreenTwo() {
         </div>
 
         <div
-          className={isnose? "isActivelefteye" : "notActivelefteye"}
+          className={isnose ? "isActivelefteye" : "notActivelefteye"}
           style={{ height: "80%", width: "70%", position: "relative" }}
         >
           {" "}
