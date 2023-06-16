@@ -85,7 +85,7 @@ function ScreenThree() {
                 </Draggable>
 
                 {/* righteye */}
-                {val == "iswheel" ? (
+                {val == "isrighteye" ? (
                   <Draggable
                     onStart={handleStart}
                     onDrag={handleDrag}
