@@ -6,9 +6,8 @@ import Draggable from "react-draggable";
 import "./ScreenThree.css";
 
 function ScreenThree() {
-
-  
-  
+  //let history = useHistory();
+  //const navigate = useNegative();
 
   const handleStart = (e) => {
     // console.log("Start");
@@ -51,6 +50,7 @@ function ScreenThree() {
         document.getElementById(`${val}`).style.width = "100px";
         break;
       }
+      
     }
   };
   const getRender = () => {
@@ -85,7 +85,7 @@ function ScreenThree() {
                 </Draggable>
 
                 {/* righteye */}
-                {/* {val == "islefteye" ? (
+                {val == "iswheel" ? (
                   <Draggable
                     onStart={handleStart}
                     onDrag={handleDrag}
@@ -107,33 +107,65 @@ function ScreenThree() {
                       />
                     </div>
                   </Draggable>
-                ) : null} */}
+                ) : null}
               </>
             );
           }
         })}
       </div>
     );
+
+    // Object.keys(rangeStoreVal).map((val, index) => {
+    //   console.log(rangeStoreVal[val]["isChecked"]);
+
+    //   let isActive = rangeStoreVal[val]["isChecked"];
+
+    //   return (
+    //     <div>
+    //       <h1>adsd</h1>
+    //     </div>
+    //   );
+    //   //   if (isActive == true) {
+    //   //     console.log("YES");
+    //   //     return (
+    //   //       <div>
+    //   //         <h1>{val}</h1>
+    //   //       </div>
+    //   //     );
+    //   //   }
+    // });
   };
 
-  
-
   function handleClick() {
-    const navigate=useNavigate();
     var arrData = [];
     var itm = document.getElementById("Assemble");
 
     var cln = itm.cloneNode(true);
     display.push(cln);
+    // display.push(document.getElementById("islefteye"));
+    // display.push(document.getElementById("isrighteye"));
+    // display.push(document.getElementById("isnose"));
+    // display.push(document.getElementById("issmile"));
+    
 
-    //    console.log(cln, "******************");
+    // outerElm.push(document.getElementById("islefteye").outerHTML);
+    // outerElm.push(document.getElementById("isrighteye").outerHTML);
+    // outerElm.push(document.getElementById("isnose").outerHTML);
+    // outerElm.push(document.getElementById("issmile").outerHTML);
+    // 
 
-    //arrData.push(cln);
-   
-    navigate("/ScreenFour");
-  };
+    // sessionStorage.setItem("cloneNodeData", cln);
+    console.log(cln, "******************");
 
+    // history.push("/screenFour");
+    // arrData.push(cln);
+    // history.push({
+    //   pathname: "/screenFour",
 
+      // state: { detail: arrData },
+    //});
+
+  }
 
   return (
     <div className="ScreenThree-main">
@@ -141,11 +173,12 @@ function ScreenThree() {
       <div>
         <h3>DRAG AND DROP</h3>
       </div>
-      
+      <Link to= "/ScreenFour">
       <div className="ScreenThree-btn" onClick={handleClick}>
         {" "}
         <center>Next</center>
       </div>
+      </Link>
     </div>
   );
 }
