@@ -7,7 +7,7 @@ import "./ScreenThree.css";
 
 function ScreenThree() {
   //let history = useHistory();
-  //const navigate = useNegative();
+const navigate = useNavigate();
 
   const handleStart = (e) => {
     // console.log("Start");
@@ -142,19 +142,19 @@ function ScreenThree() {
 
     var cln = itm.cloneNode(true);
     display.push(cln);
-    // display.push(document.getElementById("islefteye"));
-    // display.push(document.getElementById("isrighteye"));
-    // display.push(document.getElementById("isnose"));
-    // display.push(document.getElementById("issmile"));
+    //  display.push(document.getElementById("islefteye"));
+    //  display.push(document.getElementById("isrighteye"));
+    //  display.push(document.getElementById("isnose"));
+    //  display.push(document.getElementById("issmile"));
     
 
-    // outerElm.push(document.getElementById("islefteye").outerHTML);
-    // outerElm.push(document.getElementById("isrighteye").outerHTML);
-    // outerElm.push(document.getElementById("isnose").outerHTML);
-    // outerElm.push(document.getElementById("issmile").outerHTML);
-    // 
+    //  outerElm.push(document.getElementById("islefteye").outerHTML);
+    //  outerElm.push(document.getElementById("isrighteye").outerHTML);
+    //  outerElm.push(document.getElementById("isnose").outerHTML);
+    //  outerElm.push(document.getElementById("issmile").outerHTML);
+    
 
-    // sessionStorage.setItem("cloneNodeData", cln);
+    //  sessionStorage.setItem("cloneNodeData", cln);
     console.log(cln, "******************");
 
     // history.push("/screenFour");
@@ -164,6 +164,7 @@ function ScreenThree() {
 
       // state: { detail: arrData },
     //});
+    navigate("/ScreenFour",)
 
   }
 
