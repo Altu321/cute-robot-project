@@ -11,11 +11,7 @@ function ScreenFour(props) {
   }, []);
   const location = useLocation();
   console.log(props.location.state);
-  //   console.log(display);
-  //   console.log(JSON.parse(sessionStorage.getItem("cloneNodeData")));
-  //   console.log(document.getElementById("Assemble"));
-
-   //  let data = display[0];
+  
 
   console.log(display, "data");
   const displayNode = () => {
@@ -32,7 +28,7 @@ function ScreenFour(props) {
       </div>
       <h4 className="titleFour">WHAT A DESIGN 😊 </h4>
 
-      <div>{displayNode()}</div>
+      {/* <div>{displayNode()}</div> */}
     </div>
   );
 }
